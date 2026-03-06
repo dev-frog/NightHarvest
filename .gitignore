@@ -6,6 +6,8 @@ save/
 *.json    # especially if you still have local json fallback
 *.sav
 
+.DS_Store
+
 # LÖVE fused / packaged games
 *.love
 game.love
