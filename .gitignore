@@ -1,0 +1,54 @@
+# LÖVE2D / Lua game ignores
+
+# Local saves & user data
+save/
+*.save
+*.json    # especially if you still have local json fallback
+*.sav
+
+# LÖVE fused / packaged games
+*.love
+game.love
+NightHarvest.exe      # if you build windows exe
+NightHarvest.app/     # macOS bundle
+NightHarvest_linux/   # linux builds
+
+# Temporary / build files
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store             # macOS
+Thumbs.db             # Windows
+desktop.ini
+
+# Libraries you might download (but better to git submodule or document source)
+lib/https.lua         # ← comment out if you want to keep it versioned
+lib/fetch.lua
+
+# Large assets you might add later (uncomment if needed)
+/assets/sounds/*.ogg
+/assets/sounds/*.wav
+/assets/images/*.png   # ← only if they're huge; usually keep small ones in git
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node.js backend folder (if you keep it inside the repo)
+backend/node_modules/
+backend/.env
+
+# Logs & debug
+*.log
+debug/
+
+# macOS junk
+.AppleDouble
+.LSOverride
+
+# General
+*.bak
+*.old
